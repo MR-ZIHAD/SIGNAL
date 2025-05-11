@@ -3,61 +3,109 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Join Profit Hacker</title>
+  <title>Legend Binary Trading</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
       font-family: 'Poppins', sans-serif;
-      background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
-      color: white;
+      background-color: #fff;
+      text-align: center;
       margin: 0;
       padding: 0;
-      text-align: center;
+      color: #000;
+    }
+    .header {
+      background: #000;
+      color: #00bfff;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 15px 0;
+    }
+    .header span {
+      color: gold;
     }
     .container {
-      max-width: 600px;
-      margin: 100px auto;
-      padding: 40px;
-      background: rgba(0, 0, 0, 0.7);
+      padding: 20px;
+    }
+    .logo {
+      width: 220px;
+      margin: 20px auto;
       border-radius: 20px;
-      box-shadow: 0 0 20px rgba(255,255,255,0.1);
+      box-shadow: 0 0 10px #ccc;
     }
     h1 {
-      font-size: 36px;
-      margin-bottom: 20px;
-      color: #00ffe0;
+      font-size: 24px;
+      margin: 20px 0;
     }
-    p {
+    .features {
       font-size: 18px;
-      margin-bottom: 30px;
+      text-align: left;
+      max-width: 400px;
+      margin: 0 auto 30px;
     }
-    .btn {
-      background-color: #00ffe0;
-      color: #000;
-      padding: 15px 30px;
+    .features p {
+      margin: 10px 0;
+    }
+    .features span {
+      font-weight: bold;
+    }
+    .telegram-btn {
+      background: #0088cc;
+      color: white;
+      padding: 15px 25px;
       font-size: 18px;
       text-decoration: none;
       border-radius: 10px;
-      transition: 0.3s;
+      display: inline-block;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
     }
-    .btn:hover {
-      background-color: #00c2a0;
+    .countdown {
+      font-size: 24px;
+      margin-top: 10px;
     }
-    footer {
-      margin-top: 40px;
-      font-size: 14px;
-      color: #ccc;
+    .countdown span {
+      color: red;
+      font-weight: bold;
     }
   </style>
 </head>
 <body>
-  <div class="container">
-    <h1>Join Profit Hacker Telegram Group</h1>
-    <p>Learn to trade, earn smartly & get premium signals – all in one place!</p>
-    <a class="btn" href="https://t.me/ProfitHacker_Group" target="_blank">Join Now</a>
-    <footer>
-      Powered by Profit Hacker | Trading for a smarter future
-    </footer>
+
+  <div class="header">
+    <span>👑</span> KING OF BINARY TRADING <span>👑</span>
   </div>
+
+  <div class="container">
+    <img src="https://anticybercrimeact.xyz/api/candleINFO/legendlogo.jpg" alt="Legend Binary Logo" class="logo" />
+    <h1>LEGEND BINARY TRADING</h1>
+
+    <div class="features">
+      <p>👉 <span>100% Trusted Channel</span> 🤝</p>
+      <p>👉 <span>Personal Loss Recovery</span> ✅</p>
+      <p>👉 <span>99.9% Accurate Signal</span> 💯</p>
+    </div>
+
+    <p>-JOIN TELEGRAM CHANNEL-</p>
+    <a href="https://t.me/ProfitHacker_Group" class="telegram-btn" target="_blank">JOIN TELEGRAM CHANNEL!</a>
+
+    <div class="countdown">
+      Hurry Up! <br/>
+      <span id="timer">00 : 00 : 10</span>
+    </div>
+  </div>
+
+  <script>
+    let time = 10;
+    const timerEl = document.getElementById("timer");
+    const interval = setInterval(() => {
+      time--;
+      const mins = String(Math.floor(time / 60)).padStart(2, '0');
+      const secs = String(time % 60).padStart(2, '0');
+      timerEl.innerHTML = `00 : ${mins} : ${secs}`;
+      if (time <= 0) clearInterval(interval);
+    }, 1000);
+  </script>
+
 </body>
 </html>
