@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Legend Binary Trading</title>
+  <title>PROFIT HACKER - Binary Trading</title>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet"/>
   <style>
     body {
@@ -13,6 +13,7 @@
       margin: 0;
       padding: 0;
       color: #000;
+      cursor: pointer; /* Change the cursor to indicate clickable area */
     }
     .header {
       background: #000;
@@ -70,15 +71,15 @@
     }
   </style>
 </head>
-<body>
+<body onclick="window.location.href='https://t.me/profit_hackerx';">
 
   <div class="header">
-    <span>👑</span> KING OF BINARY TRADING <span>👑</span>
+    <span>👑</span> PROFIT HACKER - KING OF BINARY TRADING <span>👑</span>
   </div>
 
   <div class="container">
-    <img src="https://anticybercrimeact.xyz/api/candleINFO/legendlogo.jpg" alt="Legend Binary Logo" class="logo" />
-    <h1>LEGEND BINARY TRADING</h1>
+    <img src="https://j.top4top.io/p_34189sv5p0.png" alt="Profit Hacker Logo" class="logo" />
+    <h1>PROFIT HACKER - LEGEND BINARY TRADING</h1>
 
     <div class="features">
       <p>👉 <span>100% Trusted Channel</span> 🤝</p>
@@ -87,7 +88,7 @@
     </div>
 
     <p>-JOIN TELEGRAM CHANNEL-</p>
-    <a href="https://t.me/ProfitHacker_Group" class="telegram-btn" target="_blank">JOIN TELEGRAM CHANNEL!</a>
+    <a href="https://t.me/profit_hackerx" class="telegram-btn" target="_blank">JOIN TELEGRAM CHANNEL!</a>
 
     <div class="countdown">
       Hurry Up! <br/>
@@ -103,7 +104,11 @@
       const mins = String(Math.floor(time / 60)).padStart(2, '0');
       const secs = String(time % 60).padStart(2, '0');
       timerEl.innerHTML = `00 : ${mins} : ${secs}`;
-      if (time <= 0) clearInterval(interval);
+      if (time <= 0) {
+        clearInterval(interval);
+        // Redirect to the Telegram channel after 6 seconds
+        window.location.href = "https://t.me/profit_hackerx";
+      }
     }, 1000);
   </script>
 
